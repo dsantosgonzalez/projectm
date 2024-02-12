@@ -208,6 +208,11 @@ void ProjectM::Initialize()
     LoadIdlePreset();
 
     m_timeKeeper->StartPreset();
+
+    std::cout << "ProjectM initialized" << std::endl;
+    std::cout << "Press F1 for menu" << std::endl;
+    std::cout << "Press n to switch to the next preset" << std::endl;
+    std::cout << "Press f to pause the visualizer" << std::endl;
 }
 
 void ProjectM::LoadIdlePreset()

@@ -181,6 +181,18 @@ void projectMSDL::keyHandler(SDL_Event* sdl_evt)
             }
             break;
 
+	case SDLK_f:
+            if(!paused){
+                SDL_PauseAudioDevice(_audioDeviceId, true);
+            }
+            else{
+                SDL_PauseAudioDevice(_audioDeviceId, false);
+            }
+
+            paused = !paused;
+
+            break;
+
         case SDLK_i:
             if (sdl_mod & KMOD_LGUI || sdl_mod & KMOD_RGUI || sdl_mod & KMOD_LCTRL)
             {

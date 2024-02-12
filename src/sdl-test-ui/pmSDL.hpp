@@ -136,6 +136,7 @@ public:
 
     bool done{false};
     bool mouseDown{false};
+    bool paused{false};
     bool wasapi{false};    // Used to track if wasapi is currently active. This bool will allow us to run a WASAPI app and still toggle to microphone inputs.
     bool fakeAudio{false}; // Used to track fake audio, so we can turn it off and on.
     bool stretch{false};   // used for toggling stretch mode
